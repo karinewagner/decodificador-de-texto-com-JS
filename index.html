@@ -37,27 +37,37 @@
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="btn">
-          <button>Criptografar</button>
-          <button>Descriptografar</button>
+          <button onclick="encrypt()">Criptografar</button>
+          <button onclick="decrypt()">Descriptografar</button>
         </div>
 
       </section>
 
       <section class="show-text">
-        <div class="before-search hide">
+        <div id="output-text" class="before-search">
           <img src="./image/image-pesquisa.svg" alt="Pessoa sentada no chão com uma lupa na mão olhando um diamante.">
           <div>
             <strong>Nenhuma mensagem encontrada.</strong>
             <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
           </div>
         </div>
-        <div class="after-search">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</h2>
-          <button>Copiar</button>
-        </div>
       </section>
     </main>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/karinewagner" target="_blank">
+          <img src="image/github.png"/>
+        </a>
+        <a href="https://www.linkedin.com/in/karinedwagner/" target="_blank">
+          <img src="image/linkedin.png"/>
+        </a>
+        <h3>Desenvolvido por Karine Wagner.</h3>
+      </div>
+    </footer>
   </div>
+
+  <script src="/script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </body>
 </html>

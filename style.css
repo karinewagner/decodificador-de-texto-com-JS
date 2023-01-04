@@ -42,7 +42,7 @@
   width: 5rem;
   height: 2.5rem;
   background: var(--background-dark);
-  border: 2px solid #bbb;
+  border: .2rem solid #bbb;
   border-radius: 2rem;
   top: 2rem;
   right: 4rem;
@@ -55,8 +55,8 @@
   background: var(--color-dark);
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  left: 5px;
+  top: .4rem;
+  left: .5rem;
   transition: all 300ms ease-in-out;
 }
 
@@ -66,7 +66,7 @@
 
 #dark-mode-input:checked ~ .dark-mode-label div {
   background: var(--background-dark);
-  left: 28px;
+  left: 2.8rem;
 }
 
 
@@ -92,13 +92,15 @@ main {
   display: flex;
   gap: 8rem;
 
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
 }
 
 .include-text {
   display: flex;
   flex-direction: column;
+
+  width: 70%;
 }
 
 .include-text textarea {
@@ -120,7 +122,7 @@ main {
 
 .include-text .warning {
   display: flex;
-  gap: 8px;
+  gap: .8rem;
 }
 
 .include-text .warning p {
@@ -143,13 +145,13 @@ main {
 }
 
 button {
-  width: 32rem;
+  width: 30rem;
   height: 6.7rem;
   padding: 2.4rem;
 
   border-radius: 2.4rem;
   background: none;
-  border: 1px solid var(--color-light);
+  border: .1rem solid var(--color-light);
   color: var(--color-light);
 
   font-size: 1.6rem;
@@ -173,7 +175,9 @@ button {
 .show-text {
   background-color: var(--background-color);
   border-radius: 3rem;
-  padding: 10px 20px;
+  padding: 1rem 2rem 0;
+
+  width: 30%;
 }
 
 .before-search {
@@ -208,19 +212,84 @@ button {
   background-color: var(--color-dark);
 }
 
-.after-search {
+#copy-text {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-}
 
-.after-search h2 {
+  width: 100%;
+  height: 40rem;
+
   font-size: 2.2rem;
   line-height: 3.6rem;
   color: var(--background-dark);
+
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
-.after-search button {
-  margin-bottom: 20px;
+#copy {
+  margin: 2rem 0;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap : 8px;
+  margin: 20px 0;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer h3 {
+  color: var(--background-dark);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#dark-mode-input:checked ~ .page footer .footer h3 {
+  color: black;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1150px) {
+  main {
+    flex-direction: column; 
+  }
+
+  .include-text {
+    width: 100%;
+  }
+
+  .include-text .btn {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .show-text {
+    width: 100%;
+  }
+
+  .before-search {
+    justify-content: center;
+    height: 15rem;
+  }
+
+  .before-search img {
+    display: none;
+  }
+
+  .before-search strong {
+    margin-bottom: 1px;
+  }
+
+  #copy-text {
+    height: 20rem;
+  }
+}
