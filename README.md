@@ -36,8 +36,8 @@ Por exemplo:
 
 ## 🌐 Link do projeto
 
-- [Clique aqui para visualizar!](https://)
+- [Clique aqui para visualizar!](https://karinewagner.github.io/decodificador-de-texto-com-JS/)
 
 ## 📸 Screenshots
 
-![image](/)
+![image](/image/screenshot.png)
