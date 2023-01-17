@@ -156,6 +156,8 @@ button {
 
   font-size: 1.6rem;
   line-height: 2rem;
+  
+  cursor: pointer;
 }
 
 .include-text .btn button:nth-child(1) {
